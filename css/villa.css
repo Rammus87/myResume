@@ -1,0 +1,236 @@
+/* 通用區 */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #333;
+    color: #fff;
+}
+
+:root{
+    --primary-color:rgba(13,110,139,0.72);
+    --secondary-color:rgba(229,148,0,0.9);
+    --overlay-color: rgba(24,39,51,0.85);
+    --page-1-color:steelblue;
+    --page-2-color:tan;
+    --page-3-color:teal;
+    --page-4-color:tomato;
+    --animate-speed: 1s;
+}
+
+
+span{
+    color: var(--page-4-color);
+    font-weight: bold;
+}
+
+
+
+/* vall-2頁頭 */
+
+#page-1{
+    background: url(../img/一樓泡腳.jpg)no-repeat center center/cover;
+    background-color: var(--page-4-color);
+}
+
+#page-2{
+    background: url(../img/一樓大廳看裡面.jpg)no-repeat center center/cover;
+    background-color: var(--secondary-color);
+}
+#page-3{
+    background: url(../img/二樓雙人間.jpg)no-repeat center center/cover;
+    background-color: var(--primary-color);
+}
+#page-4{
+    background: url(../img/一樓大廳電視書櫃.jpg)no-repeat center center/cover;
+    background-color: var(--page-2-color);
+}
+
+.d2{
+    background-color: var(--primary-color);
+    color: #fff;
+    width: 50%;
+    width: 300px;
+    border-radius: 15px;
+    padding: 20px 40px;
+}
+
+
+#park-1{
+    line-height: 1.4;
+    overflow: hidden;
+    color: #fff;
+}
+
+
+.page{
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.page h1{
+    font-size: 36px;
+    line-height: 1.2;
+    margin: 1rem;
+}
+
+.page p{
+    font-size: 1.3rem;
+}
+
+.page div .btn{
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease-in;
+}
+
+.nav-link{
+    margin: 2px;
+}
+
+.nav-item{
+    margin: 0 10px;
+}
+
+.nav-item .nav-link:hover,
+.nav-item .naver{
+    background-color:var(--page-4-color);
+    border-radius: 5px;
+}
+
+.nav-item .dropdown-menu .dropdown-item:hover{
+    background-color:var(--page-4-color);
+    border-radius: 5px;
+}
+
+.btn{
+    margin: 5px;
+}
+
+.btn:hover{
+    scale: 110%;
+}
+
+
+/* 按摩菜單 */
+.slider{
+    position: relative;
+    overflow: hidden;
+    height: 95vh;
+    width: 100vw;
+}
+
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current{
+    opacity: 1;
+}
+
+.slide:first-child{
+    background: url(../img/腳底按摩.jpg) no-repeat center center/cover; 
+}
+
+.slide:nth-child(2){
+    background: url(../img/腰部按摩.jpg) no-repeat center center/cover; 
+}
+
+.slide:nth-child(3){
+    background: url(../img/采耳.jpg) no-repeat center center/cover; 
+}
+
+.slide .content{
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    width: 600px;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 35px;
+}
+
+.slide .content h1{
+    margin-bottom: 10px;
+}
+
+.slide.current .content{
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#prev{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+}
+
+.buttons button#next{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+}
+
+.buttons button{
+    border: 2px solid white;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 12px 15px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.buttons button:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+h6{
+    text-align: end;
+}
+
+/* 進度條 */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 80px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    z-index: 999; /* 調整疊放順序，讓進度條在頁面上方顯示 */
+}
+
+/* menu手機 */
+@media(max-width:600px){
+
+    .slide .content{
+        bottom: -300px;
+        left: 0;
+        width: 100%;
+    }
+    .slide.current .content{
+        transform: translateY(-300px);
+    }
+}

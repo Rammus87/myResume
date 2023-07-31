@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/coff.css">
+    <link rel="icon" href="img/四季villa logo.jpeg">
+    <title>四季Vill | 咖啡菜單 </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 導覽欄 -->
+    <nav id="navbar-example2" class="navbar navbar-expand-lg bg-danger-subtle">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="villa2.html">四季villa</a>
+      <button class="navbar-toggler btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="villa2.html">環境</a>
+        </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              按摩
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="massage.html">半身經絡按摩</a></li>
+              <li><a class="dropdown-item" href="massage.html">腳底按摩</a></li>
+              <li><a class="dropdown-item" href="massage.html">放鬆采耳</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle naver" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              咖啡
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#coffpage">義式濃縮</a></li>
+              <li><a class="dropdown-item" href="#coffpage">拿鐵</a></li>
+              <li><a class="dropdown-item" href="#coffpage">卡布奇諾</a></li>
+              <li><a class="dropdown-item" href="#coffpage">台灣鮮奶茶</a></li>
+            </ul>
+          </li>
+        </ul>
+    </nav>
+      <!-- 主頁 -->
+    <div class="slider">
+      <div class="slide current" id="coffpage">
+        <div class="content">
+          <h1>義式濃縮</h1>
+          <p>快速沖煮的espresso，也必須快速飲用，因為espresso上有一層飽含油脂、富有香氣物質的乳化泡沫，本店顧客可免費享用。</p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content" id="coffpage">
+          <h1>拿鐵</h1>
+          <p>香醇的義式濃縮咖啡加上打泡過後富有層次的先奶泡，一口香醇咖啡配上農香鮮奶，本店顧客可免費享用。</p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content" id="coffpage">
+          <h1>卡布奇諾</h1>
+          <p>卡布奇諾也是濃縮咖啡和熱牛奶和一層奶泡的組合，和拿鐵的差別是牛奶的比例，口感會以咖啡風味為主，牛奶和奶泡讓入口的咖啡更為滑順，本店顧客可免費享用。</p>
+        </div>
+      </div>
+      <div class="slide">
+        <div class="content" id="coffpage">
+          <h1>台灣鮮奶茶</h1>
+          <p>使用從台灣帶過來的台灣冬瓜磚用以熬煮的香濃冬瓜茶，搭配香濃鮮奶茶，本店顧客可免費享用。</p>
+        </div>
+      </div>
+    </div>
+    <!-- 左右按鈕 -->
+      <div class="buttons">
+        <button id="prev">
+          <i class="fa-solid fa-circle-left"></i>
+        </button>
+        <button id="next">
+          <i class="fa-solid fa-circle-right"></i>
+        </button>
+      </div>
+      
+   
+    <script src="menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

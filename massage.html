@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/villa.css">
+    <title>四季Vill | 按摩菜單 </title>
+    <link rel="icon" href="img/四季villa logo.jpeg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.bootcdn.net/ajax/libs/font-awesome/6.3.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- 導覽欄 -->
+    <nav id="navbar-example2" class="navbar navbar-expand-lg bg-danger-subtle">
+      <div class="container-fluid">
+          <a class="navbar-brand" href="villa2.html">四季villa</a>
+      <button class="navbar-toggler btn btn-outline-secondary" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link" href="villa2.html">環境</a>
+        </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle naver" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              按摩
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#massagepage">半身經絡按摩</a></li>
+              <li><a class="dropdown-item" href="#massagepage">腳底按摩</a></li>
+              <li><a class="dropdown-item" href="#massagepage">放鬆采耳</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              咖啡
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="/coff.html">義式濃縮</a></li>
+              <li><a class="dropdown-item" href="/coff.html">拿鐵</a></li>
+              <li><a class="dropdown-item" href="/coff.html">卡布奇諾</a></li>
+              <li><a class="dropdown-item" href="/coff.html">台灣鮮奶茶</a></li>
+            </ul>
+          </li>
+        </ul>
+    </nav>
+      <!-- 主頁 -->
+    <div class="slider">
+      <div class="slide current" id="massagepage">
+        <div class="content">
+          <h1>腳底按摩</h1>
+          <p>本店主打中藥泡腳,用泡腳的方式促進血液循環,按完頸肩以及泡完腳後接著享受腳底按摩,給您最 平價的舒活享受！</p>
+          <h6> 40 min  79¥</h6>
+          <h6> 60 min  118¥</h6>
+        </div>
+      </div>
+      <div class="slide" id="massagepage">
+        <div class="content">
+          <h1>經絡推拿</h1>
+          <p>利用撥經的方式,再透過專業師傅的手技，減少生活中因姿勢產生的疼痛酸感,把自己調整到最佳狀態，迎接更多生活挑戰！</p>
+          <h6> 40 min  79¥</h6>
+          <h6> 60 min  118¥</h6>
+        </div>
+      </div>
+      <div class="slide" id="massagepage">
+        <div class="content">
+          <h1>放鬆采耳</h1>
+          <p>我們運用了大陸四川的採耳技術,更加精進了採耳的手法,並且增加現代人不論男女都喜歡的撥筋和按摩。</p>
+          <h6> 40 min  79¥</h6>
+        </div>
+      </div>
+    </div>
+    <!-- 左右按鈕 -->
+      <div class="buttons">
+        <button id="prev">
+          <i class="fa-solid fa-circle-left"></i>
+        </button>
+        <button id="next">
+          <i class="fa-solid fa-circle-right"></i>
+        </button>
+      </div>
+      
+   
+    <script src="menu.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

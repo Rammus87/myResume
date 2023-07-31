@@ -1,0 +1,146 @@
+/* 菜單 */
+:root{
+    --primary-color:rgba(13,110,139,0.72);
+    --secondary-color:rgba(229,148,0,0.9);
+    --overlay-color: rgba(24,39,51,0.85);
+    --page-1-color:steelblue;
+    --page-2-color:tan;
+    --page-3-color:teal;
+    --page-4-color:tomato;
+    --animate-speed: 1s;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nav-link{
+    margin: 2px;
+}
+
+.nav-item{
+    margin: 0 10px;
+}
+
+.nav-item .nav-link:hover,
+.nav-item .naver{
+    background-color:var(--page-4-color);
+    border-radius: 5px;
+}
+
+.nav-item .dropdown-menu .dropdown-item:hover{
+    background-color:var(--page-4-color);
+    border-radius: 5px;
+}
+
+.btn{
+    margin: 5px;
+}
+
+.btn:hover{
+    scale: 110%;
+}
+
+.slider{
+    position: relative;
+    overflow: hidden;
+    height: 95vh;
+    width: 100vw;
+}
+
+.slide{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.slide.current{
+    opacity: 1;
+}
+
+.slide:first-child{
+    background: url(../img/義式濃縮.jpg) no-repeat center center/cover; 
+}
+
+.slide:nth-child(2){
+    background: url(../img/濃縮咖啡.jpg) no-repeat center center/cover; 
+}
+
+.slide:nth-child(3){
+    background: url(../img/卡布奇諾.jpg) no-repeat center center/cover; 
+}
+
+.slide:nth-child(4){
+    background: url(../img/牛奶.jpg) no-repeat center center/cover; 
+}
+
+.slide .content{
+    position: absolute;
+    bottom: 70px;
+    left: -600px;
+    width: 600px;
+    opacity: 0;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+    padding: 35px;
+}
+
+.slide .content h1{
+    margin-bottom: 10px;
+}
+
+.slide.current .content{
+    opacity: 1;
+    transform: translateX(600px);
+    transition: all 0.7s ease-in-out 0.3s;
+}
+
+.buttons button#prev{
+    position: absolute;
+    top: 50%;
+    left: 15px;
+}
+
+.buttons button#next{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+}
+
+.buttons button{
+    border: 2px solid white;
+    background-color: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: 12px 15px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.buttons button:hover{
+    background-color: #fff;
+    color: #333;
+}
+
+h6{
+    text-align: end;
+}
+
+/* menu手機 */
+@media(max-width:600px){
+
+    .slide .content{
+        bottom: -300px;
+        left: 0;
+        width: 100%;
+    }
+    .slide.current .content{
+        transform: translateY(-300px);
+    }
+}
